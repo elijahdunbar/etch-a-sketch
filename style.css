@@ -34,6 +34,7 @@ body {
 }
 
 h1 {
+  margin-top: 25px;
   font-size: 2em;
 }
 
@@ -54,8 +55,8 @@ button {
   background-color: hsl(0, 0%, 87%);
   color: #3b194e;
   display: flex;
-  height: 512px;
-  width: 512px;
+  height: 500px;
+  width: 500px;
   flex-wrap: wrap;
   margin: 50px;
   justify-content: space-evenly;

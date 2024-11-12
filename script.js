@@ -7,9 +7,9 @@ const gridBtn = document.querySelector('#grid');
 function createGrid(numberOfSquares) {
   for (let i = 0; i < numberOfSquares ** 2; i++) {
     const gridSquare = document.createElement('div');
-    const squareSize = container.clientHeight / numberOfSquares;
+    const squareSize = (500 / numberOfSquares)
 
-    gridSquare.style.border = '1px solid black';
+    // gridSquare.style.border = '1px solid black';
     gridSquare.style.height = `${squareSize}px`;
     gridSquare.style.width = `${squareSize}px`;
   
@@ -24,7 +24,7 @@ function createGrid(numberOfSquares) {
 gridBtn.addEventListener('click', () => {
   resetGrid();
   let size = prompt('How many squares per side?');
-  while (Number(size) < 0 && Number(size) > 64) {
+  while (Number(size) < 0 && Number(size) > 100) {
     size = prompt('How many squares per side?');
   }
   createGrid(size);
